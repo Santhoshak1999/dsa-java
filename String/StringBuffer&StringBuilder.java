@@ -1,6 +1,8 @@
 // "static void main" must be defined in a public class.
 public class Main {
     public static void main(String[] args) {
+//StringBuilder is a class in Java used for creating mutable sequences of characters
+        
         //StringBuffer in java is used for mutable string manipulation, providing appending inserting and deleting operations.
         
         StringBuffer sb = new StringBuffer();
