@@ -17,6 +17,7 @@ class Solution {
     public int getRomanNumber(char s){
         //there is no need of break statement becouse every case is returning 
         switch (s){
+//In Java, switch statements are typically used with constant expressions. When you use double quotes, you're specifying string literals instead of character literals.
             case 'I':return 1;
             case 'X':return 10;
             case 'V':return 5;
