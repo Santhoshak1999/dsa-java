@@ -7,12 +7,18 @@ class TreeNode {
         this.val = val;
         this.next = null;
     }
+    TreeNode(int val, TreeNode node){
+        this.val = val;
+        this.next = node;
+    }
 }
 
 class LinkedList{
-    TreeNode InsertToHead(TreeNode inhead, TreeNode head){
-        inhead.next = head;
-        return inhead;
+    TreeNode InsertToHead(int val, TreeNode head){
+        return new TreeNode(val, head); 
+        // TreeNode temp = new TreeNode(val, head);
+        // return temp;
+    
     }
     
     void Print(TreeNode Head){
@@ -40,9 +46,8 @@ public class Insert2Head{
         }
         System.out.print("Change of Head node");
         val = sc.nextInt();
-        temp = new TreeNode(val);
         LinkedList ll = new LinkedList();
-        head = ll.InsertToHead(temp, head);
+        head = ll.InsertToHead(val, head);
         ll.Print(head);
         
     }
