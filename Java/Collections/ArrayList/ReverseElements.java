@@ -14,7 +14,6 @@ public class ReverseElements {
         Collections.reverse(colors);
         System.out.println("After Reverse the Elements");
         System.out.println(colors);
-
     }
  
 
