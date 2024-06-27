@@ -26,10 +26,7 @@ public class CopyArrList {
 
         Collections.copy(list1, list2);
         System.out.println(list1.toString() + list2.toString());
-        Collections.copy(null, null);
-
-
-    
+        Collections.copy(null, null);    
     }
     
     
