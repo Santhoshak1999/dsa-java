@@ -3,9 +3,9 @@ import java.util.List;
 
 public class PascalTryangleII {
     public static void main(String[] args){
-        List<Integer> pasc = getrowPascal(3);
+        List<Integer> pasc = getrowPascal(33);
         for(Integer i : pasc){
-            System.out.print(i);
+            System.out.print(i + "\t");
         }
 
     }
