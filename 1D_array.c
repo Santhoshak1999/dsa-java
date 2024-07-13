@@ -1,6 +1,6 @@
 #include<stdio.h>
 void main(){
-    //1D array with pointers
+    //1D array with poin
     //int *p is a pointer variable to the integer data type and not called interger pointer
     //float *f is pointer variable to the float data type and not a floating pointer 
     //char *c is pointer variable to the char data type and not a charater pointer 
