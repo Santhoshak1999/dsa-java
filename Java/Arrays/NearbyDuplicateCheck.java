@@ -1,6 +1,15 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+LeetCode 219
+
+
+*/
+
+
+
+
 public class NearbyDuplicateCheck {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         Map<Integer, Integer> mapindex = new HashMap<>();
