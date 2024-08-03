@@ -86,3 +86,12 @@ public class Invert_BinaryTree {
         printTree(invertedRoot);
     }
 }
+
+// In Java, both poll() and remove() are methods used to retrieve and remove the head of a queue,
+// but they have different behaviors when the queue is empty. Here's a detailed comparison:
+
+// queue.poll() : Retrieves and removes the head of the queue, 
+//                  or returns null if the queue is empty.
+// queue.remove() : Retrieves and removes the head of the queue,
+//                  but throws a NoSuchElementException if the queue is empty.
+
