@@ -25,6 +25,7 @@ public class Non_static {
 
         System.out.println(e.name);//null
         System.out.println(e.id);//0
+        employee.labourcost();
 
 
 
@@ -38,4 +39,15 @@ class employee{
     int id;
     //a static variable
     static int labour = 200;//you can access this variable using class name
+
+    static void work(){
+        // System.out.println(name +  "working now");//couse an error becouse 
+        //the you can not access the non static variable in the non static methods
+
+        //lets try to print a static variable
+
+    }
+    static void labourcost(){
+        System.out.println("All the labour will get " + 200 + "rupees for one day");
+    }
 }
