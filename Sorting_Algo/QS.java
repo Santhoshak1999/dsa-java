@@ -1,36 +1,39 @@
 public class QS {
-    
-    static int partision(int[] arr, int lb, int ub){
+    static int partition(int[] arr, int lb, int ub){
         //taking first element as pivot element
-        int pivot = arr[lb], start = lb, end = ub;
+        int pivot = arr[lb], start=lb, end = ub;;
         while(start < end){
-            while(start < ub  && arr[start] <= pivot){
+            while(arr[start] <= pivot && start < ub){
                 start++;
             }
-            while(end > lb && arr[end] > pivot){
+            while(arr[end] > pivot && end > lb){
                 end--;
-            }
-            if(start < end){
+            } 
+            if(start <= end){
                 swap(arr, start, end);
+                System.out.println("Swapped: " +  java.util.Arrays.toString(arr));
             }
         }
-        swap(arr, lb, end);//lb is a pivotal element index
+        swap(arr, end, lb);
+        System.out.println("Pivote Swapped: " +  java.util.Arrays.toString(arr));
         return end;
     }
 
-    static void swap(int[] arr, int a, int b){
-        arr[a] = arr[a]^arr[b];
-        arr[b] = arr[a]^arr[b];
-        arr[a] = arr[a]^arr[b];
+    static void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
+        
 
     static int[] quickSort(int[] arr, int lb, int ub){
         if(lb < ub){
-            int position = partision(arr, lb, ub);
-            quickSort(arr, lb, position - 1);
-            quickSort(arr, position+1, ub);
+            int pos = partition(arr, lb, ub);
+            quickSort(arr, lb, pos-1);
+            quickSort(arr, pos+1, ub);
         }
         return arr;
+         
     }
     
     
@@ -41,9 +44,9 @@ public class QS {
         System.out.println("Original Array: " + java.util.Arrays.toString(arr));
     
     // Call quickSort to sort the array
-        quickSort(arr, 0, n-1);
+        int[] a = quickSort(arr, 0, n-1);
     
-        System.out.println("Sorted Array: " + java.util.Arrays.toString(arr));
+        System.out.println("Sorted Array: " + java.util.Arrays.toString(a));
     }
     
 }
