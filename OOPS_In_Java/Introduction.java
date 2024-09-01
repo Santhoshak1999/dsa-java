@@ -13,7 +13,7 @@ public class Introduction{
         float[] marks = new float[5];
         
         //but in this we are storing rollno, name, and marks in different variables
-        //but i need to store all the value
+        //but i need comibine each (rollnumber, name marks) in single pack
         //to do this we need opps and object oriented programmings comes into the picture
 
         //Classes
@@ -22,6 +22,7 @@ public class Introduction{
         Student santhosh;
         santhosh = new Student(); // Student() calling a by default constructor
         //lets print the property value before initiallising
+        System.out.println("property value before initiallising");
         System.out.println(santhosh.name);
         System.out.println(santhosh.name);
         System.out.println(santhosh.marks);
